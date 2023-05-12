@@ -1,0 +1,13 @@
+<p>edit works!</p>
+<form action="">
+    <div class="mb-3">
+        <label for="txtName" class="form-label">Tittle</label>
+        <input type="text" name="name" [(ngModel)] = "forms.tittle" class="form-control" id="txtName" />
+      </div>
+      <div class="mb-3">
+        <label for="txtDes" class="form-label">Description</label>
+        <textarea name="" id="" cols="30" rows="5"  name="description" [(ngModel)] = "forms.description"></textarea>
+       
+      </div>
+      <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+</form>

@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <h1>Issue board</h1>
+    <form [formGroup]="form" (ngSubmit)="sin()">
+        <!-- <label for="name">Name</label>
+        <input type="text" name="name" formControlName="name" placeholder="Enter Name">
+        <span *ngIf="(form.get('name')?.hasError('required'))">Please enter valid Name</span>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" formControlName="email" placeholder="enter Email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" formControlName="password" placeholder="Enter Password">
+        <br>
+        <label for="">Gender</label>
+        <input type="radio" formControlName="gender" value="male" >Male
+        <input type="radio" formControlName="gender" value="female" >Female
+        <input type="radio" formControlName="gender" value="other" >Other
+        <br>
+        <select formControlName="state">
+            <option *ngFor="let state of states">{{state.value}}</option>
+        </select> -->
+        
+        <input type="text" placeholder="TITLE"formControlName="tittle">
+        <br><br>
+        
+        <textarea name="" id="" cols="30" rows="10" placeholder="DESCRIPITION" formControlName="description"></textarea>
+       <br><br>
+        <button type="submit">submit</button>
+    </form>
+</div>
